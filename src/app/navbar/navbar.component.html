@@ -1,0 +1,55 @@
+<div class="nav-container">
+ 
+  <div class="topnav">
+   
+    <div class="logo">
+      <img src="assets/pngwing.com.png" alt="Logo de la marca">
+    </div>
+    <div class="social-icons">
+      <div class="social">
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram" ></i>
+        </a>
+      </div>
+      <div class="social">
+        <a href="https://twitter.com/" target="_blank" class="social-icon">
+          <i class="fab fa-twitter" ></i>
+        </a>
+      </div>
+      <div class="social">
+        <a href="https://es-es.facebook.com/" target="_blank" class="social-icon">
+          <i class="fab fa-facebook" ></i>
+        </a>
+      </div>
+      <div class="social">
+        <a href="https://accounts.google.com/v3/signin/confirmidentifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fhl%3Des&emr=1&hl=es&ifkv=AVQVeyzmnldIjn02YWbKarN0dWWfQqpkqLkidXrqVYEcvSexszhTUCWootW3Dw-6K_S32EPmuFn-Lg&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-536331125%3A1698397480979094&theme=glif" target="_blank" class="social-icon">
+          <i class="fab fa-google" ></i>
+        </a>
+      </div>
+      <div class="jumbotron">
+        <h1>Nakama Store</h1>
+    
+    </div>
+    </div>
+    
+  
+    <div class="brand"></div>
+    <div class="links">
+      <a routerLink="/inicio" routerLinkActive="active">Home</a>
+      <a routerLink="#" routerLinkActive="active">Productos</a>
+      <a routerLink="/contacto" routerLinkActive="active">Contactos</a>
+      <a routerLink="/registro" routerLinkActive="active">registro</a>
+      <ng-container *ngIf="!isUserLoggedIn; else loggedIn">
+        <a class="login-icon" routerLink="/sesion" routerLinkActive="active">
+          <img src="assets/pngwing.com.png" alt="Icono de Inicio de Sesión">
+        </a>
+      </ng-container>
+      <ng-template #loggedIn>
+        <a (click)="cerrarSesion()" class="login-icon">
+          <img src="assets/icono-cerrar-sesion.png" alt="Icono de Cerrar Sesión">
+        </a>
+      </ng-template>
+    </div>
+    
+  </div>
+</div>

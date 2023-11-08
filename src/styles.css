@@ -1,0 +1,20 @@
+/* Estilo común para el encabezado llamativo */
+.jumbotron {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  margin-left: 30%;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.jumbotron h1 {
+  font-size: 48px;
+  font-weight: bold;
+ 
+}
+body {
+  background-color: #ff0000; /* Cambia este valor al color de fondo que desees */
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+  padding: 0; /* Elimina el relleno predeterminado del body */
+}
