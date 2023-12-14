@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<!--estructura-->
+<body>
+  
+
+<a href="#">
+  <span>Cesta
+  </span>
+  <i class="fa-solid fa-bag-shopping"></i>
+</a>
+<section class="contenedor-inicio">
+
+  <div class="img1">
+      <img class="luff1" src="assets/Luffy.png" alt="foto luffy"></div>
+  <div id="containerInformativo">
+     <!--contenido de tiendas-->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="text-center"><h1>Tienda</h1></div>
+     <div>
+      <div class="row justify-content-center">
+        <div *ngFor="let producto of productos$ | async" class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img [src]="producto.Foto" alt="{{ producto.Nombre }}">
+            <div class="card-body">
+              <h2 class="card-title">{{ producto.Nombre }}</h2>
+              <p class="card-text">Precio: {{ producto.Precio | currency:'EUR':'symbol' }}</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+      
+    </div>
+  </div>
+</div>
+      
+
+  </div>
+
+  <div class="img2">
+
+      <img class="luff2" src="assets/Luffy02.png" alt="foto luffy">
+  </div>
+</section>
+</body>
+<app-pie></app-pie>

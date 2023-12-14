@@ -17,6 +17,8 @@ import { SesionComponent } from './sesion/sesion.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { RegistroComponent } from './registro/registro.component';
+import { TiendaComponent } from './tienda/tienda.component';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 
 
@@ -29,7 +31,8 @@ import { RegistroComponent } from './registro/registro.component';
     MapaComponent,
     PieComponent,
     SesionComponent,
-    RegistroComponent
+    RegistroComponent,
+    TiendaComponent
   
   ],
   imports: [
@@ -37,7 +40,8 @@ import { RegistroComponent } from './registro/registro.component';
     FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

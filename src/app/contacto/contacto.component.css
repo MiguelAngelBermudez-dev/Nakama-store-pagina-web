@@ -1,4 +1,50 @@
 @import 'src/styles.css';
+/*CUERPO*/
+#contaainerPrincipal{
+  max-width: 1400px;
+  background-color: red;
+}
+.contenedor-inicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#containerInformativo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 820px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+
+/* Imágenes */
+.img1 {
+  width: 20%;
+  height: auto;
+}
+
+.img2 {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.luff1 {
+  max-width: 68%;
+}
+.luff2 {
+  max-width: 68%;
+  margin-left: auto; /* Pega luff2 a la derecha */
+}
+#tituloContainer {
+  flex-grow: 1; /* El título ocupa todo el espacio disponible */
+  margin-top: 16px;
+}
 /* Estilo para el formulario de contacto */
 .form-group {
     margin-bottom: 20px;
@@ -10,6 +56,7 @@
   
   .form-control {
     border-radius: 5px;
+    
   }
   
   textarea.form-control {
@@ -18,7 +65,7 @@
   
   /* Estilo para el botón de enviar */
   .btn-primary {
-    background-color: #04AA6D;
+    background-color:  #fb8f06;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -27,13 +74,13 @@
   }
   
   .btn-primary:hover {
-    background-color: #038754;
+    background-color:  #fb8f06;
   }
   
   /* Estilo para el mensaje de confirmación de envío */
   .mensaje-envio {
     display: none;
-    background-color: #04AA6D;
+    background-color: #fb8f06;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -53,4 +100,41 @@
       transform: translateY(0);
     }
   }
+.formulario{
+  margin: 10%;
   
+  border: solid black 3px;
+  width: 30%;
+  background-color: #ccc;
+}
+.formulario2{
+  margin: 10%;
+ 
+  border: solid black 3px;
+  width: 30%;
+  background-color: #ccc;
+}
+a{
+  margin-left: 90%;
+color: #fff;
+font-size: 30px;
+font-family:fantasy;
+  width: 50px;
+height: auto;
+}
+ i{
+  margin-top: 2%;
+  font-size: 40px;
+  color: #fff;
+}
+
+iframe{
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  height: auto;
+  border: solid black 3px;
+}
+body{
+  background-color:#fb8f06;
+}

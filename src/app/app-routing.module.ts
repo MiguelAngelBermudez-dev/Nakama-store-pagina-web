@@ -5,6 +5,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { SesionComponent } from './sesion/sesion.component';
 import { RegistroComponent } from './registro/registro.component';
 import { PieComponent } from './pie/pie.component'; 
+import { TiendaComponent } from './tienda/tienda.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'registro', component: RegistroComponent},
   { path: 'sesion', component: SesionComponent },
+ { path: 'tienda', component: TiendaComponent},
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
 ];
 

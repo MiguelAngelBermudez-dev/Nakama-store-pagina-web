@@ -1,14 +1,23 @@
 <app-navbar></app-navbar>
 
 <body>
-  <!-- Encabezado llamativo -->
-  <div class="jumbotron jumbotron-sesion">
-    <h1>Registro</h1>
-    <p>Regístrate para disfrutar de nuestros deliciosos panes frescos.</p>
-  </div>
+  <a href="#">
+    <span>Cesta
+    </span>
+    <i class="fa-solid fa-bag-shopping"></i>
+</a>
+<section class="contenedor-inicio">
 
-  <!-- Contenedor principal de registro -->
+    <div class="img1">
+        <img class="luff1" src="assets/chopper.png" alt="foto luffy">
+      </div>
+      
+      <!--CONTENEDOR del medio-->
+    <div id="containerInformativo">
+    <!-- Contenedor principal de registro -->
   <div class="container">
+    <h1>¿Quieres formar parte de nuestra tripulacion?</h1>
+    <h3>Registrate futuro nakama!!!</h3>
     <!-- Muestra el mensaje de error si existe -->
     <div *ngIf="errorMessage" class="alert alert-danger">
       {{ errorMessage }}
@@ -17,37 +26,45 @@
     <form (ngSubmit)="registrarUsuario()">
       <div class="form-group">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" class="form-control" required>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" class="form-control" placeholder="nombre">
       </div>
 
       <div class="form-group">
         <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" [(ngModel)]="apellidos" class="form-control" required>
+        <input type="text" id="apellidos" name="apellidos" [(ngModel)]="apellidos" class="form-control" placeholder="apellido" required>
       </div>
 
       <div class="form-group">
         <label for="telefono">Número de Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" [(ngModel)]="telefono" class="form-control" required>
+        <input type="tel" id="telefono" name="telefono" [(ngModel)]="telefono" class="form-control" placeholder="telefono" required>
       </div>
 
       <div class="form-group">
         <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" [(ngModel)]="correo" class="form-control" required>
+        <input type="email" id="correo" name="correo" [(ngModel)]="correo" class="form-control" placeholder="email" required>
       </div>
 
       <div class="form-group">
         <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" class="form-control" required>
+        <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" class="form-control" placeholder="contraseña" required>
       </div>
 
       <div class="form-group">
         <label for="confirmarContrasena">Confirma tu Contraseña:</label>
-        <input type="password" id="confirmarContrasena" name="confirmarContrasena" [(ngModel)]="confirmarContrasena" class="form-control" required>
+        <input type="password" id="confirmarContrasena" name="confirmarContrasena" [(ngModel)]="confirmarContrasena" class="form-control" placeholder="confirmar " required>
       </div>
 
-      <button type="submit" class="btn btn-primary">Registrarse</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </div>
+    </div>
+
+    <div class="img2">
+
+        <img class="luff2" src="assets/chopper2.png" alt="foto luffy">
+    </div>
+</section>
+
 </body>
 
 <app-pie></app-pie>

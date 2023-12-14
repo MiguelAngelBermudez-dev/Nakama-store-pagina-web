@@ -36,9 +36,9 @@
     <div class="brand"></div>
     <div class="links">
       <a routerLink="/inicio" routerLinkActive="active">Home</a>
-      <a routerLink="#" routerLinkActive="active">Productos</a>
+      <a routerLink="/tienda" routerLinkActive="active">Productos</a>
       <a routerLink="/contacto" routerLinkActive="active">Contactos</a>
-      <a routerLink="/registro" routerLinkActive="active">registro</a>
+      <a routerLink="/registro" routerLinkActive="active">Registro</a>
       <ng-container *ngIf="!isUserLoggedIn; else loggedIn">
         <a class="login-icon" routerLink="/sesion" routerLinkActive="active">
           <img src="assets/pngwing.com.png" alt="Icono de Inicio de Sesión">

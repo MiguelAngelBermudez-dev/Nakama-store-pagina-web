@@ -1,12 +1,17 @@
 <app-navbar></app-navbar>
 
 <body>
-    <!-- Encabezado llamativo -->
-    <div class="jumbotron jumbotron-sesion">
-        <h1>Inicia Sesión</h1>
-    </div>
+    <a href="#">
+        <span>Cesta
+        </span>
+        <i class="fa-solid fa-bag-shopping"></i>
+    </a>
+    <section class="contenedor-inicio">
 
-    <!-- Contenedor principal de inicio de sesión -->
+        <div class="img1">
+            <img class="luff1" src="assets/usopp.png" alt="foto luffy"></div>
+        <div id="containerInformativo">
+          <!-- Contenedor principal de inicio de sesión -->
     <div class="container">
         <!-- Muestra el mensaje de error si existe -->
         <div *ngIf="errorMessage" class="alert alert-danger">
@@ -14,20 +19,56 @@
         </div>
 
         <form (ngSubmit)="iniciarSesion()">
+            <i class="registre fa-solid fa-user-plus" style="color: black;"></i>
             <div class="form-group">
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" [(ngModel)]="correo" class="form-control" required>
+       
+                <input type="email" id="correo" name="correo" [(ngModel)]="correo" class="form-control" placeholder="Email" required>
             </div>
 
             <div class="form-group">
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" class="form-control" required>
+                
+                <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" placeholder="password" class="form-control" required>
             </div>
-
+            
+            <a href="#" class="recuperacion"><br/> ¿Lo as olvidado?</a>
+            <div class="form-check brown-checkbox">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                    ¿desea que le mandemos informacion de nuestros productos?
+                </label>
+            </div>
+            <div class="form-check green-checkbox">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                    Acepte los terminos y condiciones de pivacidad
+                </label>
+            </div>
             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-            <p>¿No tienes una cuenta? <a routerLink="/registro">Regístrate</a></p>
+            <a class="crear" routerLink="/registro" type="button">Crear cuenta</a>
         </form>
     </div>
+
+
+
+
+
+
+
+        </div>
+
+        <div class="img2">
+
+            <img class="luff2" src="assets/usopp2.png" alt="foto luffy">
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
 </body>
 
 <app-pie></app-pie>
